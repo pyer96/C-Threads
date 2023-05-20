@@ -1,0 +1,14 @@
+###########################_Pier_Luigi_Manfrini_##########################
+
+	For testing purposes the file 'large_txt' is left 
+	in the exercise folder just in order to test the program.
+	Its size is 20MB, and has been generated with 
+	a program wrote for dbg/mngmt in the second laboratory.
+	
+	One possible usage:
+		>	<./solution04> test
+		>	input large_txt as filename within the program 
+		> 	stop executing the program with END
+		> 	verify the correctness with: `cmp large_txt test`
+
+##########################################################################
