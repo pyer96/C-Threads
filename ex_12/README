@@ -1,0 +1,11 @@
+###############################_Pier_Luigi_Manfrini_################################
+
+	A User Level Scheduler has the disadvantage of not being able to 
+	communicate with the kernel level scheduler, with which (moreover) 
+	it can conflict.
+	At User Level, also, is not possible to implement a waiting queue since
+	it is completely managed by the kernel level scheduler and also because
+	such user level scheduler should be always in memory and aware of the
+	devices waiting queues and handle their interrupts.
+
+####################################################################################
