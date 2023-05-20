@@ -1,0 +1,16 @@
+################################_Pier_Luigi_Manfrini_####################################
+
+	This data exchanging method is limited by the pipe in first place.
+	Since we are dealing with different processes, unless we create 
+	a shared portion of memory, we need to use pipes, that by themselves
+	are quite powerful and efficient. Though, further passing data to the thread
+	that each child creates means passing it either inside the pthread_create()
+	as argument or exploiting the heap of each child to intercommunicate
+	between main and secondary thread. In this latter case, the 
+	use of mutexes is mandatory if data consistency is required.
+
+	If we replace one of the two child by an exec we would destroy the threads
+	since the whole process is completely replaced. For instance, if the main thread
+	of some process exits/return, its child threads are destroyed.
+
+#########################################################################################
